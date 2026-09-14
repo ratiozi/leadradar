@@ -10,7 +10,7 @@ function Header({ onSearch }) {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
             </svg>
           </button>
-          <h1 className="text-xl font-bold">Лиды <span className="text-brand-blue text-sm bg-brand-blue/10 px-2 py-1 rounded">CRM</span></h1>
+          <h1 className="text-xl font-bold">���� <span className="text-brand-blue text-sm bg-brand-blue/10 px-2 py-1 rounded">CRM</span></h1>
         </div>
 
         <div className="flex items-center gap-4 flex-1 max-w-xl mx-6">
@@ -18,7 +18,7 @@ function Header({ onSearch }) {
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
             <input
               type="text"
-              placeholder="Поиск лидов"
+              placeholder="����� �����"
               className="w-full bg-dark-700 border border-dark-500 rounded-lg pl-10 pr-4 py-2 text-sm focus:outline-none focus:border-brand-blue"
               onChange={(e) => onSearch(e.target.value)}
             />
@@ -28,7 +28,7 @@ function Header({ onSearch }) {
         <div className="flex items-center gap-4">
           <div className="text-right">
             <div className="text-sm font-medium">10:03</div>
-            <div className="text-xs text-gray-400">ПН, 14 СЕНТЯБРЯ</div>
+            <div className="text-xs text-gray-400">��, 14 ��������</div>
           </div>
           <button className="text-gray-400 hover:text-white relative">
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -37,7 +37,7 @@ function Header({ onSearch }) {
             <span className="absolute -top-1 -right-1 w-2 h-2 bg-brand-red rounded-full"></span>
           </button>
           <div className="w-8 h-8 rounded bg-brand-purple/30 flex items-center justify-center text-brand-purple text-sm font-bold">
-            АД
+            ��
           </div>
         </div>
       </div>
@@ -47,10 +47,10 @@ function Header({ onSearch }) {
 
 function ActionButtons() {
   const actions = [
-    { icon: Plus, label: 'Новый лид', sublabel: 'ручной ввод', color: 'bg-brand-blue' },
-    { icon: Download, label: 'Экспорт', sublabel: 'CSV · Excel', color: 'bg-dark-700' },
-    { icon: Phone, label: 'Звонок', sublabel: 'IP-телефония', color: 'bg-brand-orange' },
-    { icon: Mail, label: 'Почта', sublabel: 'рассылка', color: 'bg-brand-cyan' }
+    { icon: Plus, label: '����� ���', sublabel: '������ ����', color: 'bg-brand-blue' },
+    { icon: Download, label: '�������', sublabel: 'CSV � Excel', color: 'bg-dark-700' },
+    { icon: Phone, label: '������', sublabel: 'IP-���������', color: 'bg-brand-orange' },
+    { icon: Mail, label: '�����', sublabel: '��������', color: 'bg-brand-cyan' }
   ]
 
   return (

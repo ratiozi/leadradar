@@ -2,7 +2,7 @@ import { PieChart, Pie, Cell, Tooltip, Legend, ResponsiveContainer } from 'recha
 
 function SourcesWidget({ sources }) {
   const data = sources?.all?.slice(0, 6)?.map((s, idx) => ({
-    name: `Источник ${s.source_id}`,
+    name: `�������� ${s.source_id}`,
     value: s.count,
     opportunity: s.opportunity
   })) || []
@@ -12,9 +12,9 @@ function SourcesWidget({ sources }) {
   if (!sources || sources.all.length === 0) {
     return (
       <div className="bg-brand-pink/20 rounded-lg p-5">
-        <h3 className="text-sm font-semibold mb-4">Источники</h3>
+        <h3 className="text-sm font-semibold mb-4">���������</h3>
         <div className="flex items-center justify-center h-40 text-gray-400 text-sm">
-          Нет данных
+          ��� ������
         </div>
       </div>
     )
@@ -23,7 +23,7 @@ function SourcesWidget({ sources }) {
   return (
     <div className="bg-brand-pink/20 rounded-lg p-5">
       <div className="flex items-center justify-between mb-4">
-        <h3 className="text-sm font-semibold">Источники</h3>
+        <h3 className="text-sm font-semibold">���������</h3>
       </div>
 
       <div className="flex items-center gap-4">
